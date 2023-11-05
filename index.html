@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Weather Forecast</h1>
+
+<div id="app">️
+    <div class="city-select">
+        <select id="city">
+            <option value="Hamburg">Hamburg</option>
+            <option value="London">London</option>
+        </select>
+        <button onclick="fetchForecast()">Get Weather</button>
+    </div>
+    -------------------
+    <table class="weather-forecast-table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Max-Temp</th>
+            <th>Min-Temp</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="date"></td>
+            <td class="min-temperature"></td>
+            <td class="max-temperature"></td>
+            <td class="icon"></td>
+        </tr>
+        <tr>
+            <td class="date"></td>
+            <td class="min-temperature"></td>
+            <td class="max-temperature"></td>
+            <td class="icon"></td>
+        </tr>
+        <tr>
+            <td class="date"></td>
+            <td class="min-temperature"></td>
+            <td class="max-temperature"></td>
+            <td class="icon"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
